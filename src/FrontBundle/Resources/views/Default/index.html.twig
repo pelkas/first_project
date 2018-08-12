@@ -1,1 +1,34 @@
-Hello World!
+{#<ol>
+    <li>
+        {{ movies_pl }}
+    </li>
+        <ol>
+            {% for key,value in second_child %}
+                <li>
+                    {{ value }}
+                </li>
+            {% endfor %}
+        </ol>
+    <br>
+    <li>
+        {{ movies_subtitles }}
+    </li>
+    <ol>
+        {% for key,value in third_child %}
+            <li>
+                {{ value }}
+            </li>
+        {% endfor %}
+    </ol>
+    <br>
+    <li>
+        {{ tv_shows }}
+    </li>
+    <ol>
+        {% for key,value in fourth_child %}
+            <li>
+                {{ value }}
+            </li>
+        {% endfor %}
+    </ol>
+</ol> #}
